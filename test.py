@@ -1,5 +1,24 @@
 barbarian = dict(primary_ability = "strength", hit_dice = "1d12", saves = ["str", "con"], weapon_prof = ["simple", "martial"], armor_prof = ["light", "medium", "shield"],
-                 start_equip = dict(A = ["Greataxe", "Handaxe", "Handaxe", "Handaxe", "Handaxe", ("GP", 15)], B = [("GP", 15)]),
-                 lvl_1 = dict(features = ["rage", "unarmored defense", "weapon mastery"], rages = 2, rage_damage = 2, weap_mast = 2)
+                 start_equip = dict(A = ["Greataxe", "Handaxe", "Handaxe", "Handaxe", "Handaxe", ("GP", 15)], B = [("GP", 75)]),
+                 lvl_1 = dict(features = ["rage", "unarmored defense", "weapon mastery"], rages = 2, rage_damage = 2, weap_mast = 2),
+                 lvl_2 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_3 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_4 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_5 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_6 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_7 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_8 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_9 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_10 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_11 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_12 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_13 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_14 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_15 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_16 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_17 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_18 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_19 = dict(features = [], rages = , rage_damage = , weap_mast = ),
+                 lvl_20 = dict(features = [], rages = , rage_damage = , weap_mast = )
                  )
 print(barbarian)
