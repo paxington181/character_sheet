@@ -1,3 +1,5 @@
+import json
+
 barbarian = dict(primary_ability = "strength", hit_dice = "1d12", saves = ["str", "con"], weapon_prof = ["simple", "martial"], armor_prof = ["light", "medium", "shield"],
                  start_equip = dict(A = ["greataxe", "handaxe", "handaxe", "handaxe", "handaxe", ("GP", 15)], B = [("GP", 75)]),
                  lvl_1 = dict(features = ["rage", "unarmored defense", "weapon mastery"], rages = 2, rage_damage = 2, weap_mast = 2),
@@ -21,4 +23,5 @@ barbarian = dict(primary_ability = "strength", hit_dice = "1d12", saves = ["str"
                  lvl_19 = dict(features = ["epic boon"], rages = 6, rage_damage = 4, weap_mast = 4),
                  lvl_20 = dict(features = ["primal champion"], rages = 6, rage_damage = 4, weap_mast = 4)
                  )
-print(barbarian)
+with open("barbarian.json", "w", encoding = "utf-8") as f:
+    json.dump(barbarian, f, indent = 4)
