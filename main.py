@@ -1,3 +1,4 @@
+import json
 import customtkinter as CTk
 import CTkToolTip as CTkTT
 from PIL import Image
