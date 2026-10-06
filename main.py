@@ -35,6 +35,13 @@ class class_frame(CTk.CTkFrame):
     def __init__(self, master, char_class, char_subclass, species, class_level):
         super().__init__(master)
 
+class system_grame(CTk.CTKFrame):
+    def __init__(self, master):
+        super().__init__(master)
+
+        self.save_char = None
+        self.load_char = None
+
 class Main(CTk.CTk):
     def __init__(self):
         super().__init__()
@@ -64,6 +71,14 @@ class Main(CTk.CTk):
         self.prepared_spells = []
         self.equipment = []
         self.heroic_insp = True
+
+    def set_filetoload():
+        pass
+
+    def load_character():
+        with open("characters/Barbi McBarian.json") as file:
+            character = json.load(file)
+            print(character)
 
 sheet = Main()
 sheet.mainloop()
