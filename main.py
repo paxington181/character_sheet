@@ -35,7 +35,7 @@ class class_frame(CTk.CTkFrame):
     def __init__(self, master, char_class, char_subclass, species, class_level):
         super().__init__(master)
 
-class system_grame(CTk.CTKFrame):
+class system_grame(CTk.CTkFrame):
     def __init__(self, master):
         super().__init__(master)
 
@@ -49,22 +49,23 @@ class Main(CTk.CTk):
         self.title("D&D 2024 Character Sheet")
         self.geometry("100x100")
 
-        self.char_class = ["barbarian"]
+        self.char_name = None
+        self.char_class = None
         self.char_subclass = None
-        self.species = "human"
-        self.size = "medium"
-        self.background = "acolyte"
-        self.char_level = 1
+        self.species = None
+        self.size = None
+        self.background = None
+        self.char_level = 0
         self.experience = 0
         self.class_level = [1]
-        self.max_hp = 13
-        self.current_hp = 13
+        self.max_hp = 0
+        self.current_hp = 0
         self.temp_hp = 0
         self.hit_dice = ["1d12"]
         self.proficiency_bonus = 2
         self.save_proficencies = []
-        self.char_stats = [15, 14, 13, 12, 10, 8]
-        self.skills = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        self.char_stats = None
+        self.skills = None
         self.feats = ["magic initiate"]
         self.caster_stats = ["wis"]
         self.caster_level = 1
@@ -72,13 +73,26 @@ class Main(CTk.CTk):
         self.equipment = []
         self.heroic_insp = True
 
+        self.load = CTk.CTkButton(self, text = "Load Character", command = self.load_character)
+        self.load.pack()
+
     def set_filetoload():
         pass
 
-    def load_character():
-        with open("characters/Barbi McBarian.json") as file:
+    def load_character(self):
+        with open("characters/Barbi McBarian.json", "r", encoding = "utf-8") as file:
             character = json.load(file)
-            print(character)
+        self.skills = character["skills"]
+        self.char_name = character["char_name"]
+        self.char_class = character["char_class"]["barbarian"]
+        self.char_subclass = character["char_class"]
+        self.species = character["species"]
+        self.background = character["background"]
+        print(self.char_name)
+        print(self.char_subclass)
+        print(self.species)
+        print(self.background)
+        
 
 sheet = Main()
 sheet.mainloop()
