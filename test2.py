@@ -2,7 +2,7 @@ import json
 
 character = dict(
                 char_name = "Barbi McBarian",
-                char_class = dict(barbarian = [1, None]), 
+                char_class = [("barbarian", 1, None)], 
                 species = "human",
                 background = "acolyte",
                 stats = dict(str = 15, dex = 13, con = 14, int = 8, wis = 12, cha = 10),

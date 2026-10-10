@@ -1,11 +1,12 @@
 {
     "char_name": "Barbi McBarian",
-    "char_class": {
-        "barbarian": [
+    "char_class": [
+        [
+            "barbarian",
             1,
             null
         ]
-    },
+    ],
     "species": "human",
     "background": "acolyte",
     "stats": {
