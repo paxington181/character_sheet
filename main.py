@@ -57,7 +57,7 @@ class Main(CTk.CTk):
         self.background = None
         self.char_level = 0
         self.experience = 0
-        self.class_level = [1]
+        self.class_level = []
         self.max_hp = 0
         self.current_hp = 0
         self.temp_hp = 0
@@ -84,11 +84,13 @@ class Main(CTk.CTk):
             character = json.load(file)
         self.skills = character["skills"]
         self.char_name = character["char_name"]
-        self.char_class = character["char_class"]["barbarian"]
-        self.char_subclass = character["char_class"]
+        self.char_class = character["char_class"][0][0]
+        self.char_level = character["char_class"][0][1]
+        self.char_subclass = character["char_class"][0][2]
         self.species = character["species"]
         self.background = character["background"]
         print(self.char_name)
+        print(self.char_level)
         print(self.char_subclass)
         print(self.species)
         print(self.background)
