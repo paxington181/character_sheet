@@ -32,10 +32,10 @@ class stat_frame(CTk.CTkFrame):
         super().__init__(master)        
 
 class class_frame(CTk.CTkFrame):
-    def __init__(self, master, char_class, char_subclass, species, class_level):
+    def __init__(self, master, char_class, char_subclass, species, class_level, background, char_name, play_name):
         super().__init__(master)
 
-class system_grame(CTk.CTkFrame):
+class system_frame(CTk.CTkFrame):
     def __init__(self, master):
         super().__init__(master)
 
