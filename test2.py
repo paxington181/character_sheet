@@ -2,7 +2,7 @@ import json
 
 character = dict(
                 char_name = "Barbi McBarian",
-                char_class = [("barbarian", 1, None)], 
+                char_class = [("barbarian", 1, None), ("fighter", 3, "battle master")], 
                 species = "human",
                 background = "acolyte",
                 stats = dict(str = 15, dex = 13, con = 14, int = 8, wis = 12, cha = 10),
@@ -20,5 +20,5 @@ character = dict(
                 money = dict(platinum = 0, electrum = 0, gold = 23, silver = 0, copper = 0)
                 )
 
-with open("Barbi McBarian.json", "w", encoding = "utf-8") as f:
+with open("characters/Barbi McBarian.json", "w", encoding = "utf-8") as f:
     json.dump(character, f, indent = 4)

@@ -84,16 +84,13 @@ class Main(CTk.CTk):
             character = json.load(file)
         self.skills = character["skills"]
         self.char_name = character["char_name"]
-        self.char_class = character["char_class"][0][0]
-        self.char_level = character["char_class"][0][1]
-        self.char_subclass = character["char_class"][0][2]
         self.species = character["species"]
         self.background = character["background"]
-        print(self.char_name)
-        print(self.char_level)
-        print(self.char_subclass)
-        print(self.species)
-        print(self.background)
+        self.process_class(character["char_class"])
+
+    def process_class(self, char_classes):
+        for i in char_classes:
+            print(i)
         
 
 sheet = Main()
