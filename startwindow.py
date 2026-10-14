@@ -3,13 +3,15 @@ import customtkinter as CTk
 import CTkToolTip as CTkTT
 from PIL import Image
 
+CTk.set_appearance_mode("dark")
+
 class new_load(CTk.CTkFrame):
     def __init__(self, master):
         super().__init__(master)
 
-        self.new = CTk.CTkButton(self, text = "New", width = 95, command = None)
+        self.new = CTk.CTkButton(self, text = "New", width = 97, command = None)
         self.new.pack(side = "left")
-        self.load = CTk.CTkButton(self, text = "Load", width = 95, command = None)
+        self.load = CTk.CTkButton(self, text = "Load", width = 97, command = None)
         self.load.pack(side = "right")
 
 
@@ -17,7 +19,7 @@ class load_window(CTk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("D&D 2024 Character Sheet Manager")
+        self.title("D&D CSM")
         self.geometry("200x400")
 
         self.buttons_frame = new_load(self)
