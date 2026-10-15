@@ -42,7 +42,7 @@ class system_frame(CTk.CTkFrame):
         self.save_char = None
         self.load_char = None
 
-class Main(CTk.CTk):
+class char_sheet(CTk.CTk):
     def __init__(self):
         super().__init__()
 
@@ -93,5 +93,5 @@ class Main(CTk.CTk):
             print(i)
         
 
-sheet = Main()
+sheet = char_sheet()
 sheet.mainloop()
