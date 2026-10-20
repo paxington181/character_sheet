@@ -36,6 +36,7 @@ n        WIZARD
             Spell book
 n        EVERYONE
             Prepared spells - rules for when spells can be changed set via class
+n       used spell slots
 
     RP Focused
 n       character appearance

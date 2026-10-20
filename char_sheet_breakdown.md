@@ -56,6 +56,7 @@ n        WIZARD
 n        EVERYONE
             Prepared spells - rules for when spells can be changed set via class
 b        Spell slots
+n       used spell slots
             
     RP Focused
 n       character appearance
