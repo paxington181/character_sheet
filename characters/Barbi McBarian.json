@@ -1,4 +1,5 @@
 {
+    "player_name": "Testi McTesterson",
     "char_name": "Barbi McBarian",
     "char_class": [
         [
@@ -12,6 +13,7 @@
             "battle master"
         ]
     ],
+    "xp": "2700",
     "species": "human",
     "background": "acolyte",
     "stats": {
@@ -22,6 +24,10 @@
         "wis": 12,
         "cha": 10
     },
+    "save_prof": [
+        "strength",
+        "constitution"
+    ],
     "max_hp": 14,
     "current_hp": 14,
     "skills": [
@@ -63,7 +69,6 @@
         ]
     },
     "used_slots": {},
-    "custom_stats": {},
     "equipment": {
         "weapons": [
             [
@@ -100,5 +105,8 @@
         "gold": 23,
         "silver": 0,
         "copper": 0
-    }
+    },
+    "heroic_inspiration": true,
+    "character_appearance": "Just an ugly little dude.  Like a squat little ball of angry muscle and bad attitude.",
+    "alignment": "chaotic good"
 }
