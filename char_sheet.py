@@ -43,12 +43,13 @@ class system_frame(CTk.CTkFrame):
         self.load_char = None
 
 class char_sheet(CTk.CTk):
-    def __init__(self):
+    def __init__(self, character):
         super().__init__()
 
         self.title("D&D 2024 Character Sheet")
         self.geometry("100x100")
 
+        self.player_name = character["player_name"]
         self.char_name = None
         self.char_class = None
         self.char_subclass = None
@@ -76,17 +77,6 @@ class char_sheet(CTk.CTk):
         self.load = CTk.CTkButton(self, text = "Load Character", command = self.load_character)
         self.load.pack()
 
-    def set_filetoload():
-        pass
-
-    def load_character(self):
-        with open("characters/Barbi McBarian.json", "r", encoding = "utf-8") as file:
-            character = json.load(file)
-        self.skills = character["skills"]
-        self.char_name = character["char_name"]
-        self.species = character["species"]
-        self.background = character["background"]
-        self.process_class(character["char_class"])
 
     def process_class(self, char_classes):
         for i in char_classes:
