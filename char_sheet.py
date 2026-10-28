@@ -50,24 +50,24 @@ class char_sheet(CTk.CTk):
         self.geometry("100x100")
 
         self.player_name = character["player_name"]
-        self.char_name = None
+        self.char_name = character["char_name"]
         self.char_class = None
         self.char_subclass = None
-        self.species = None
-        self.size = None
-        self.background = None
+        self.species = character["species"]
+        self.size = character["char_size"]
+        self.background = character["background"]
         self.char_level = 0
-        self.experience = 0
+        self.experience = character["xp"]
         self.class_level = []
-        self.max_hp = 0
-        self.current_hp = 0
+        self.max_hp = character["max_hp"]
+        self.current_hp = character["current_hp"]
         self.temp_hp = 0
         self.hit_dice = ["1d12"]
         self.proficiency_bonus = 2
-        self.save_proficencies = []
-        self.char_stats = None
-        self.skills = None
-        self.feats = ["magic initiate"]
+        self.save_proficencies = character["save_prof"]
+        self.char_stats = character["stats"]
+        self.skills = character["skills"]
+        self.feats = character["feats"]
         self.caster_stats = ["wis"]
         self.caster_level = 1
         self.prepared_spells = []
@@ -82,6 +82,3 @@ class char_sheet(CTk.CTk):
         for i in char_classes:
             print(i)
         
-
-sheet = char_sheet()
-sheet.mainloop()

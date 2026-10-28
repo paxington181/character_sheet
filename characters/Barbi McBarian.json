@@ -108,5 +108,6 @@
     },
     "heroic_inspiration": true,
     "character_appearance": "Just an ugly little dude.  Like a squat little ball of angry muscle and bad attitude.",
-    "alignment": "chaotic good"
+    "alignment": "chaotic good",
+    "char_size": "Small"
 }

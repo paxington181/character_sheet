@@ -22,7 +22,8 @@ character = dict(
                 money = dict(platinum = 0, electrum = 0, gold = 23, silver = 0, copper = 0),
                 heroic_inspiration = True,
                 character_appearance = "Just an ugly little dude.  Like a squat little ball of angry muscle and bad attitude.",
-                alignment = "chaotic good"
+                alignment = "chaotic good",
+                char_size = "Small"
                 )
 
 with open("characters/Barbi McBarian.json", "w", encoding = "utf-8") as f:
