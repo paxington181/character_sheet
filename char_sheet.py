@@ -1,4 +1,3 @@
-import json
 import customtkinter as CTk
 import CTkToolTip as CTkTT
 from PIL import Image
@@ -74,8 +73,7 @@ class char_sheet(CTk.CTk):
         self.equipment = []
         self.heroic_insp = True
 
-        self.load = CTk.CTkButton(self, text = "Load Character", command = self.load_character)
-        self.load.pack()
+        
 
 
     def process_class(self, char_classes):
