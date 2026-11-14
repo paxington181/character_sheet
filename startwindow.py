@@ -11,16 +11,21 @@ class new_load(CTk.CTkFrame):
 
         self.new = CTk.CTkButton(self, text = "New", width = 97, command = None)
         self.new.pack(side = "left")
-        self.load = CTk.CTkButton(self, text = "Load", width = 97, command = None)
+        self.load = CTk.CTkButton(self, text = "Load", width = 97, command = self.load_character)
         self.load.pack(side = "right")
 
     def character_load_window(self, character):
+        load_char = character
         character_window = CTk.CTkToplevel(app)
-        
+        character_window.title(load_char["char_name"])
+        character_window.geometry("300x300")
+        character_window.attributes("-topmost", True)
+
     
     def load_character(self):
             with open("characters/Barbi McBarian.json", "r", encoding = "utf-8") as file:
                 character = json.load(file)
+                self.character_load_window(character)
 
 
 class first_window(CTk.CTk):
