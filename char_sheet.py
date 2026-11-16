@@ -41,12 +41,13 @@ class system_frame(CTk.CTkFrame):
         self.save_char = None
         self.load_char = None
 
-class char_sheet(CTk.CTk):
+class char_sheet(CTk.CTkToplevel):
     def __init__(self, character):
         super().__init__()
 
-        self.title("D&D 2024 Character Sheet")
-        self.geometry("100x100")
+        self.title(character["char_name"])
+        self.geometry("500x100")
+        self.attributes("-topmost", True)
 
         self.player_name = character["player_name"]
         self.char_name = character["char_name"]
