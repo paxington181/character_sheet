@@ -2,7 +2,7 @@ import json
 import customtkinter as CTk
 import CTkToolTip as CTkTT
 from PIL import Image
-from char_sheet import char_sheet
+from load_sheet import char_sheet
 
 CTk.set_appearance_mode("dark")
 
